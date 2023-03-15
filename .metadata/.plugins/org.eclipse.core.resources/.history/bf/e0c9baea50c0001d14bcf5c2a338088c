@@ -1,0 +1,12 @@
+package PhanTrang.Service.User;
+
+import org.springframework.stereotype.Service;
+
+import PhanTrang.Dto.PaginatesDto;
+
+@Service
+public class PaginatesServiceImpl {
+	public PaginatesDto GetInfoPaginates(int totalData, int limit, int currentPage) {
+		
+	}
+}

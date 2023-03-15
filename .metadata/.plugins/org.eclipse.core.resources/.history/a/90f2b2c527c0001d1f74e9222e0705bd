@@ -1,0 +1,20 @@
+package PhanTrang.Dto;
+
+public class ProductsDto {
+	private id_product;
+	private id_categor;
+	private sizes;
+	private name;
+	private price;
+	private sale;
+	private title;
+	private highlight;
+	private new_produc;
+	private details;
+	private id_color;
+	private name_color;
+	private code_color;
+	private img;
+	private created_at;
+	private update_at;
+}

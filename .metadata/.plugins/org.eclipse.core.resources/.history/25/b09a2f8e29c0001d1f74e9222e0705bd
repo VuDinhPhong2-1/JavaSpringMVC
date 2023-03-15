@@ -1,0 +1,12 @@
+package PhanTrang.Dao;
+
+import java.util.List;
+
+import PhanTrang.Dto.ProductsDto;
+
+public class ProductsDao extends BaseDao {
+	public List<ProductsDto> GetDataProducts() {
+		List<ProductsDto> listProducts = new ProductsDto
+				return listProducts
+	}
+}

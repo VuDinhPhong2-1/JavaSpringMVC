@@ -1,0 +1,20 @@
+package PhanTrang.Dao;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Repository;
+
+import PhanTrang.Entity.Categorys;
+import PhanTrang.Entity.MapperCategorys;
+
+@Repository
+public class MenuDao extends BaseDao{
+	
+	public List<Menus> GetDataMenus(){
+		List<Categorys> list = new ArrayList<Categorys>();
+		String sql = "SELECT * FROM categorys";
+		list = _jdbcTemplate.query(sql, new MapperCategorys());
+		return list;
+	}
+}

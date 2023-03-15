@@ -1,0 +1,19 @@
+package PhanTrang.Service.User;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import PhanTrang.Dto.ProductsDto;
+import PhanTrang.Entity.Categorys;
+import PhanTrang.Entity.Menus;
+import PhanTrang.Entity.Slides;
+@Service
+public interface IHomeService {
+	@Autowired
+	public List<Slides> GetDataSlide();
+	public List<Categorys> GetDataCategorys();
+	public List<Menus> GetDataMenus();
+	public List<ProductsDto> GetProductsDto();
+}

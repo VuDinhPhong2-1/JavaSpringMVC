@@ -1,0 +1,27 @@
+package PhanTrang.Service.User;
+
+import org.springframework.stereotype.Service;
+
+import PhanTrang.Dto.PaginatesDto;
+
+@Service
+public class PaginatesServiceImpl {
+	public PaginatesDto GetInfoPaginates(int totalData, int limit, int currentPage) {
+		PaginatesDto paginate = new PaginatesDto();
+		paginate.setLimit(limit);;
+		paginate.setTotalPage(SetInfoTotalPage(totalData, limit));
+		paginate.setCurrentPage(CheckCurrentPage(currentPage ,paginate.getTotalPage()));
+		int start = FindStart(paginate.getCurrentPage(), limit);
+		paginate.setStart(start);
+		int end = FindEnd(paginate.getStart(), limit, totalData);
+		paginate.setEnd(end);
+		return paginate;
+	}
+
+	private int setInfoTotalPage(int totalData, int limit) {
+		Integer totalPage = 0;
+		totalPage = totalData / limit;
+		totalPage = totalPage * limit < totalData ? totalPage + 1 : totalPage;
+		return null;
+	}
+}

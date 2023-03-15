@@ -1,0 +1,6 @@
+package PhanTrang.Entity;
+import org.springframework.jdbc.core.RowMapper;
+
+public class MapperSliders implements RowMapper{
+
+}

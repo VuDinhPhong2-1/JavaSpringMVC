@@ -1,0 +1,19 @@
+package PhanTrang.Entity;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import org.springframework.jdbc.core.RowMapper;
+
+public class MapperSliders implements RowMapper<Slides>{
+
+	
+	public Slides mapRow(ResultSet rs, int rowNum) throws SQLException {
+		Slides slides = new Slides();
+		sildes.setId(id);
+		sildes.setImg(id);
+		sildes.setCaption(id);
+		sildes.setContent(id);
+		return null;
+	}
+
+}

@@ -1,0 +1,36 @@
+package PhanTrang.Dto;
+
+public class PaginatesDto {
+	private int curentPage;
+	private int limit;
+	private int end;
+	private int totalData;
+	public PaginatesDto() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public int getCurentPage() {
+		return curentPage;
+	}
+	public void setCurentPage(int curentPage) {
+		this.curentPage = curentPage;
+	}
+	public int getLimit() {
+		return limit;
+	}
+	public void setLimit(int limit) {
+		this.limit = limit;
+	}
+	public int getEnd() {
+		return end;
+	}
+	public void setEnd(int end) {
+		this.end = end;
+	}
+	public int getTotalPage() {
+		return totalPage;
+	}
+	public void setTotalPage(int totalPage) {
+		this.totalPage = totalPage;
+	}
+}

@@ -1,0 +1,11 @@
+package PhanTrang.Dao;
+
+import java.util.List;
+
+import PhanTrang.Dto.ProductsDto;
+
+public class ProductsDao {
+	public List<ProductsDto> GetDataProducts() {
+		
+	}
+}

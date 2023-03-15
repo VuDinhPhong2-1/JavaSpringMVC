@@ -1,0 +1,7 @@
+package PhanTrang.Dto;
+
+public class PaginatesDto {
+	private int curentPage;
+	private int limit;
+	private int end;
+}

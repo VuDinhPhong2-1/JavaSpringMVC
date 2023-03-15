@@ -1,0 +1,10 @@
+package PhanTrang.Controller.User;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import PhanTrang.Service.User.HomeServiceImpl;
+
+public class BaseController {
+	@Autowired
+	HomeServiceImpl _HomeService;
+}

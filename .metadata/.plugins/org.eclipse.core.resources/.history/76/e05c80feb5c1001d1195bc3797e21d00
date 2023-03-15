@@ -1,0 +1,14 @@
+package PhanTrang.Service.User;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import PhanTrang.Dao.ProductsDao;
+
+@Service
+public interface ICategoryService {
+	@Autowired
+	public List<ProductsDao> GetAllProductsByPaginates();
+}

@@ -1,0 +1,5 @@
+package PhanTrang.Service.User;
+
+public interface ICategoryService {
+
+}

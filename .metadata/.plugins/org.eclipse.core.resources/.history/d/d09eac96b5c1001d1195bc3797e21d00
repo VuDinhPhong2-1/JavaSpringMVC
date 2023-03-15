@@ -1,0 +1,10 @@
+package PhanTrang.Service.User;
+
+import org.springframework.stereotype.Service;
+
+import PhanTrang.Dao.ProductsDao;
+
+@Service
+public interface ICategoryService {
+	public list<ProductsDao> GetAllProductsByPaginates;
+}

@@ -1,0 +1,5 @@
+package PhanTrang.Controller.User;
+
+public class HomeController {
+
+}

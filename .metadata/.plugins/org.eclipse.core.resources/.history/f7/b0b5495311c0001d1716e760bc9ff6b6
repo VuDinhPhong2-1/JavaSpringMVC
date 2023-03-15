@@ -1,0 +1,27 @@
+package PhanTrang.Service.User;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import PhanTrang.Dao.CategorysDao;
+import PhanTrang.Dao.SlidesDao;
+import PhanTrang.Entity.Categorys;
+import PhanTrang.Entity.Slides;
+
+@Service
+public class HomeServiceImpl implements IHomeService{
+	@Autowired
+	private SlidesDao slidesDao;
+	private CategorysDao categorysDao;
+	
+	
+	public List<Slides> GetDataSlide() {
+		return slidesDao.GetDataSlide();
+	}
+	public List<Categorys> GetDataCategorys() {
+		return categorysDao.GetDataCategorys;
+	}
+
+}
